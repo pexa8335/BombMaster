@@ -180,11 +180,18 @@ namespace SuperTank
                     break;
                 case "GAMEOVER":
                     isStartGame = false;
+                    
                     if (_mainForm != null && !_mainForm.IsDisposed)
                     {
                         try
                         {
+
                             _mainForm.Invoke((MethodInvoker)delegate {
+                                Lose l = new Lose();
+                                l.Show();
+
+                                Thread.Sleep(300);
+
                                 OnGameOver?.Invoke(false);
                                 stopThread = true;
                             });

@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|d:\\bombmasterfinal\\bombmasterfinal\\supertank\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|solutionrelative:socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|solutionrelative:windowsforms\\frmgamemulti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|d:\\bombmasterfinal\\bombmasterfinal\\supertank\\lose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|solutionrelative:lose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD10396F-BAE5-492A-B393-22A9726629D5}|..\\ServerSocket\\ServerSocket.csproj|d:\\bombmasterfinal\\bombmasterfinal\\serversocket\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD10396F-BAE5-492A-B393-22A9726629D5}|..\\ServerSocket\\ServerSocket.csproj|d:\\bombmasterfinal\\bombmasterfinal\\serversocket\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\lose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|solutionrelative:lose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49F5BC8B-5D4B-4913-BD9B-C39295778F89}|SuperTank.csproj|D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\win.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,15 +53,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Server.cs",
               "DocumentMoniker": "D:\\BombMasterFinal\\BombMasterFinal\\ServerSocket\\Server.cs",
               "RelativeDocumentMoniker": "..\\ServerSocket\\Server.cs",
               "ToolTip": "D:\\BombMasterFinal\\BombMasterFinal\\ServerSocket\\Server.cs",
               "RelativeToolTip": "..\\ServerSocket\\Server.cs",
-              "ViewState": "AgIAAKQBAAAAAAAAAAAswK4BAAARAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAowK4BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:55:12.299Z"
+              "WhenOpened": "2024-12-29T13:55:12.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -71,7 +72,7 @@
               "RelativeDocumentMoniker": "SocketClient.cs",
               "ToolTip": "D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\SocketClient.cs",
               "RelativeToolTip": "SocketClient.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFIAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T13:47:31.618Z",
               "EditorCaption": ""
@@ -96,14 +97,14 @@
               "RelativeDocumentMoniker": "WindowsForms\\frmGameMulti.cs",
               "ToolTip": "D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\WindowsForms\\frmGameMulti.cs",
               "RelativeToolTip": "WindowsForms\\frmGameMulti.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAwFkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowE8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T05:38:10.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Lose.cs",
               "DocumentMoniker": "D:\\BombMasterFinal\\BombMasterFinal\\SuperTank\\Lose.cs",
               "RelativeDocumentMoniker": "Lose.cs",
@@ -111,8 +112,7 @@
               "RelativeToolTip": "Lose.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswBYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T05:37:30.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T05:37:30.215Z"
             }
           ]
         }
