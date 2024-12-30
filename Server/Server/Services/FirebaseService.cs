@@ -31,23 +31,27 @@ namespace Server.Services
         {
             using (Aes aes = Aes.Create())
             {
-                aes.Key = Encoding.UTF8.GetBytes(_key.PadRight(32));  // Sử dụng key 32 bytes
-                aes.IV = new byte[16];  // IV cố định cho đơn giản
+                aes.Key = Encoding.UTF8.GetBytes(_key.PadRight(32));
+                aes.IV = new byte[16];
 
                 ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
 
+                // Chuyển password thành bytes trước khi mã hóa
+                byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
+
+                // Mã hóa trực tiếp từ bytes
                 using (MemoryStream msEncrypt = new MemoryStream())
                 {
                     using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
                     {
-                        swEncrypt.Write(password);
+                        csEncrypt.Write(passwordBytes, 0, passwordBytes.Length);
+                        csEncrypt.FlushFinalBlock();
                     }
-
                     return Convert.ToBase64String(msEncrypt.ToArray());
                 }
             }
         }
+
         private string DecryptPassword(string encryptedPassword)
         {
             using (Aes aes = Aes.Create())
@@ -59,9 +63,13 @@ namespace Server.Services
 
                 using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(encryptedPassword)))
                 using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-                using (StreamReader srDecrypt = new StreamReader(csDecrypt))
                 {
-                    return srDecrypt.ReadToEnd();
+                    // Đọc bytes đã giải mã
+                    using (MemoryStream resultStream = new MemoryStream())
+                    {
+                        csDecrypt.CopyTo(resultStream);
+                        return Encoding.UTF8.GetString(resultStream.ToArray());
+                    }
                 }
             }
         }
